@@ -7,7 +7,7 @@ export interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       <header>
         <Container>
           <div className="flex items-center justify-between py-4 md:py-8">
@@ -19,7 +19,7 @@ const Layout = ({ children }: LayoutProps) => {
         </Container>
       </header>
 
-      <main>{children}</main>
+      <main className="flex-1 h-full">{children}</main>
     </div>
   )
 }
