@@ -8,4 +8,10 @@ module.exports = {
     '^@utils(.*)$': '<rootDir>/src/utils$1',
   },
   testEnvironment: 'jsdom',
+  collectCoverage: true,
+  collectCoverageFrom: [
+    './src/pages/**/*.{js,ts,jsx,tsx}',
+    './src/components/**/*.{js,ts,jsx,tsx}',
+  ],
+  coveragePathIgnorePatterns: ['node_modules', '.stories.tsx'],
 }
