@@ -25,5 +25,17 @@
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "react/react-in-jsx-scope": "off"
-  }
+  },
+  "overrides": [
+    {
+      // or whatever matches stories specified in .storybook/main.js
+      "files": ["/src/components/**/*.stories.@(js|jsx|ts|tsx)"],
+      "rules": {
+        // example of overriding a rule
+        "storybook/hierarchy-separator": "error",
+        // example of disabling a rule
+        "storybook/default-exports": "off"
+      }
+    }
+  ]
 }
