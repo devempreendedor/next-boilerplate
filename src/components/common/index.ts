@@ -1,4 +1,4 @@
-export * from './ThemeToogle'
+export * from './ThemeToggle'
 export * from './Header'
 export * from './Footer'
 export * from './Layout'

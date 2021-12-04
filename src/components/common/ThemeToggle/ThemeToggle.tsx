@@ -8,14 +8,9 @@ export default function ThemeToggle() {
   const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
 
-  // Aqui dizemos que esse componente só deve ser mostrado
-  // depois da página carregada. Isso evita que o ícone
-  // errado apareça antes do next-themes saber se deve
-  // carregar o tema dark ou o tema light
   useEffect(() => setMounted(true), [])
   if (!mounted) return null
 
-  // Uma função simples para verificar qual tema está ativo
   function isDark() {
     return theme === 'dark'
   }
@@ -23,6 +18,7 @@ export default function ThemeToggle() {
   return (
     // E a logica em si
     <button
+      data-testid="theme-toggle"
       className="focus:outline-none"
       onClick={() => setTheme(isDark() ? 'light' : 'dark')}
       aria-label="Theme toggle"
