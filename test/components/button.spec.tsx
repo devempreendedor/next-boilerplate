@@ -8,5 +8,6 @@ describe('Button Component', () => {
     const buttonText = screen.getByText(/Button/i)
 
     expect(buttonText).toBeInTheDocument()
+    expect(buttonText).toMatchSnapshot()
   })
 })
