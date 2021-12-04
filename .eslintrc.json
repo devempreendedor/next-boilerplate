@@ -29,7 +29,7 @@
   "overrides": [
     {
       // or whatever matches stories specified in .storybook/main.js
-      "files": ["/src/components/**/*.stories.@(js|jsx|ts|tsx)"],
+      "files": ["*.stories.@(ts|tsx|js|jsx|mjs|cjs)"],
       "rules": {
         // example of overriding a rule
         "storybook/hierarchy-separator": "error",
