@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react'
 import { cls } from '@utils/helpers'
 
-interface ButtonProps {
+export interface ButtonProps {
   children: ReactNode
   type?: 'button' | 'submit' | 'reset'
   className?: string
