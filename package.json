@@ -3,6 +3,18 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "author": {
+    "name": "Lucas Couto",
+    "email": "lucas@orbithub.com.br",
+    "url": "https://github.com/devempreendedor"
+  },
+  "repository": {
+    "url": "https://github.com/devempreendedor/next-boilerplate"
+  },
+  "bugs": {
+    "url": "https://github.com/devempreendedor/next-boilerplate/issues"
+  },
+  "homepage": "https://next-boilerplate-mauve.vercel.app/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
